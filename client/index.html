@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="managerApp">
+
+<head>
+
+    <title>Manager App</title>
+    <base href="/" target="_blank">
+
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" type="text/css" />
+    <link href='http://fonts.googleapis.com/css?family=Great+Vibes' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="client/css/normalize.css" type="text/css" />
+    <link rel="stylesheet" href="client/css/style.min.css" type="text/css" />
+
+</head>
+
+<body>
+
+    <header class="title title--callout">
+      <div class="wrapper">
+        <div class="title__info">
+          <div class="title__info-title">
+            <h1 class="beta">
+              Crudy
+            </h1>
+          </div>
+        </div>
+      </div>
+      <div class="title__bg">
+        <div class="wrapper"></div>
+      </div>
+    </header>
+
+    <div ui-view></div>
+
+    <footer class="footer" role="contentinfo">
+      <div class="wrapper">
+        <div class="footer__info">
+          <p>
+            Crudy. © 2017.
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <script type="text/javascript" src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="node_modules/underscore/underscore-min.js"></script>
+    <script type="text/javascript" src="node_modules/angular/angular.js"></script>
+    <script type="text/javascript" src="node_modules/@uirouter/angularjs/release/angular-ui-router.min.js"></script>
+    <script type="text/javascript" src="node_modules/angular-ui-bootstrap/dist/ui-bootstrap.js"></script>
+    <script type="text/javascript" src="node_modules/angular-ui-bootstrap/dist/ui-bootstrap-tpls.js"></script>
+    <script type="text/javascript" src="bin/js/bundle.js"></script>
+
+</body>
+
+</html>

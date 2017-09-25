@@ -1,0 +1,31 @@
+<div class="wrapper list-page">
+
+    <button ng-click="vm.addContact()" type="button" name="button" class="btn btn-default list-page__add-button"><span class="fa fa-plus"></span></button>
+    <div class="table-responsive">
+
+      <table class="table table-hover list-page__table">
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Phone</th>
+              <th>Address</th>
+              <th>Actions</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr ng-repeat="contact in vm.contacts" ng-cloak>
+              <td>{{::contact.name}}</td>
+              <td>{{::contact.phone}}</td>
+              <td>{{::contact.address}}</td>
+              <td>
+                <button ng-click="vm.viewContact(contact._id)" class="btn btn-primary" type="button" name="button"><span class="fa fa-eye"></span></button>
+                <button ng-click="vm.editContact(contact._id)" class="btn btn-warning" type="button" name="button"><span class="fa fa-pencil"></span></button>
+                <button ng-click="vm.deleteContact(contact._id)" class="btn btn-danger" type="button" name="button"><span class="fa fa-times"></span></button>
+              </td>
+            </tr>
+          </tbody>
+      </table>
+
+    </div>
+
+</div>

@@ -1,0 +1,28 @@
+@import "../common/vars";
+
+// LIST PAGE
+.list-page {
+  margin-top: -10em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  &__add-button {
+    border-bottom: none;
+    border-radius: 0px;
+    .fa {
+      color: $violet;
+    }
+  }
+  &__table {
+    background-color: #ffffff;
+    border: 1px solid $grey;
+    text-align: center;
+    th {
+      text-align: center;
+    }
+  }
+  .table-responsive {
+    width: 100%;
+  }
+}

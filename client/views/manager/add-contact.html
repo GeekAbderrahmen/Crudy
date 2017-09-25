@@ -1,0 +1,23 @@
+<div class="modal-header">
+    <h3 class="modal-title" id="modal-title">Add Contact</h3>
+</div>
+
+<div class="modal-body" id="modal-body">
+
+  <dl class="row">
+    <dt class="col-sm-3">Name</dt>
+    <input ng-model="add.contact.name" type="text" class="col-sm-9"></input>
+
+    <dt class="col-sm-3">Phone</dt>
+    <input ng-model="add.contact.phone" type="text" class="col-sm-9"></input>
+
+    <dt class="col-sm-3">Address</dt>
+    <input ng-model="add.contact.address" type="text" class="col-sm-9"></input>
+  </dl>
+
+</div>
+
+<div class="modal-footer">
+    <button class="btn btn-primary" type="button" ng-click="add.save()">Save</button>
+    <button class="btn btn-warning" type="button" ng-click="add.cancel()">Cancel</button>
+</div>
